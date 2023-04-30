@@ -22,16 +22,17 @@ email: inputEmail,
 message: inputMessage
 };
 
-inputEmail.email = '';
-inputMessage.message = ''; 
+
 
 console.log('submitted data:', submitted);
 
 
 localStorage.setItem(STORAGE_KEY, JSON.stringify(inputData));
 
+
 form.reset();
 localStorage.removeItem(STORAGE_KEY);
+
 
 }
 
